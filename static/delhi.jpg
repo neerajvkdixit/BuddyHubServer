@@ -1,0 +1,17 @@
+--2017-10-03 17:51:38--  https://drive.google.com/open?id=0ByfpEgpXG9nKQzJVLWRCcGUtcms
+Resolving drive.google.com (drive.google.com)... 74.125.200.139, 74.125.200.100, 74.125.200.101, ...
+Connecting to drive.google.com (drive.google.com)|74.125.200.139|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://drive.google.com/file/d/0ByfpEgpXG9nKQzJVLWRCcGUtcms/view?usp=drive_web [following]
+--2017-10-03 17:51:38--  https://drive.google.com/file/d/0ByfpEgpXG9nKQzJVLWRCcGUtcms/view?usp=drive_web
+Reusing existing connection to drive.google.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘open?id=0ByfpEgpXG9nKQzJVLWRCcGUtcms’
+
+     0K .......... .......... .......... .......... .......... 1.48M
+    50K .......... .......... .......... .......... ..........  225K
+   100K .......... .....                                       1.32M=0.3s
+
+2017-10-03 17:51:40 (432 KB/s) - ‘open?id=0ByfpEgpXG9nKQzJVLWRCcGUtcms’ saved [117873]
+
