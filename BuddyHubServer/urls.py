@@ -20,6 +20,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^fetchdata/getcitylist$',views.fetchdata_getcitylist,name='fetch_data')
+    url(r'^fetchdata/getcitylist$',views.fetchdata_getcitylist,name='fetch_data'),
+    url(r'^post/postpropdata$',views.post_propertydata,name='post_data')
 ]
 urlpatterns += staticfiles_urlpatterns()
