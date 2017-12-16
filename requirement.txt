@@ -1,0 +1,8 @@
+sudo pip install pymongo
+sudo mkdir /data/localmongo
+mongo --port 27017
+use admin;
+db.createUser({user : "admin" , pwd: "test@123" , roles: [ {role:"userAdminAnyDatabase" , db : "admin" }] });
+sudo /usr/bin/mongod --quiet --config /etc/mongodb.conf
+mongo --port 27017 -u "admin" -p "test@123" --authenticationDatabase "admin"
+db.createUser({user : "neeraj" , pwd : "test@123" , roles : ["root"]});

@@ -25,7 +25,7 @@ SECRET_KEY = '%klw8-bgy&8myo*6n&wzolqkc5b!$+y9xds1@s(*%zo4zrjd1%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['52.77.1.30']
+ALLOWED_HOSTS = ['52.77.1.30','localhost','127.0.0.1']
 
 
 # Application definition
@@ -80,7 +80,7 @@ DATABASES = {
         'HOST' : 'localhost',
         'PORT' : '3306',
         'USER' : 'root',
-        'PASSWORD':'leela@491'
+        'PASSWORD':'root'
     }
 
 }
@@ -125,3 +125,28 @@ USE_TZ = True
 STATIC_URL = '/static/'
 PROJECT_DIR = os.path.dirname(__file__)
 STATICFILES_DIRS = (os.path.join(PROJECT_DIR, 'static'),)
+
+DB_CONF = {
+    'env' : 'dev',
+    'dev' : {
+        'DBURL' : '127.0.0.1',
+        'DBNAME' : 'BuddyHubServerDev',
+        'USER' : 'neeraj',
+        'PASSWORD' : 'test@123',
+        'CITY_TABLE' : 'city_data' ,
+        'PROP_TABLE' : 'propertydata'
+    },
+    'test' : {
+        'DBURL' : '',
+        'DBNAME' : '',
+        'PASSWORD' : '',
+        'PROP_COLLECTION' : ''
+    },
+    'live' : {
+        'DBURL' : '',
+        'DBNAME' : '',
+        'PASSWORD' : '',
+        'PROP_COLLECTION' : ''
+    }
+}
+CURRENT_DB_CONF = DB_CONF[DB_CONF['env']]
